@@ -5,12 +5,8 @@
   <meta charset="UTF-8" />
   <title> Tudo sobre Google Glass </title>
   <link rel="stylesheet" type="text/css" href="_css/estilo.css" />
-
-  <stile>
-
-  </stile>
 </head>
-
+<script language="javaScript" src="_javascript/funcoes.js"></script>
 <body>
   <div id="interface">
     <header id="cabecalho">
@@ -23,23 +19,27 @@
       <nav id="menu">
         <h1>Menu Principal</h1>
         <ul type="square">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="specimen.html">Especificações</a></li>
-          <li><a href="fotos.html">Fotos</a></li>
-          <li><a href="multimidia.html">Multimídia</a></li>
-          <li><a href="fale-conosco.html">Fale Conosco</a></li>
+          <li onmouseover="mudaFoto('_imagens/home.png')" onmouseout="mudaFoto('_imagens/glass-oculos-preto-peq.png')"><a href="index.html">Home</a></li>
+          <li onmouseover="mudaFoto('_imagens/especificacoes.png')" onmouseout="mudaFoto('_imagens/glass-oculos-preto-peq.png')"><a href="specs.html">Especificações</a></li>
+          <li onmouseover="mudaFoto('_imagens/fotos.png')" onmouseout="mudaFoto('_imagens/glass-oculos-preto-peq.png')"><a href="fotos.html">Fotos</a></li>
+          <li onmouseover="mudaFoto('_imagens/multimidia.png')" onmouseout="mudaFoto('_imagens/glass-oculos-preto-peq.png')"><a href="multimidia.html">Multimídia</a></li>
+          <li onmouseover="mudaFoto('_imagens/contato.png')" onmouseout="mudaFoto('_imagens/glass-oculos-preto-peq.png')"><a href="fale-conosco.html">Fale Conosco</a></li>
         </ul>
       </nav>
     </header>
 
-    <section id="corpo"> 
-    <hgroup>
-      <h3>Tecnologia > Inovações</h3>
-      <h1>Saiba tudo sobre google Glass</h1>
-      <h3><i>Por Lucas Pimentel</h3></i>
-      <h3>Atualizado em 09/02/2022</h3>
+    <section id="corpo">
+      <article id="noticia-principal">
+        <header id="cabecalho-artigo">
+      <hgroup>
+        <h3>Tecnologia > Inovações</h3>
+        <h1>Saiba tudo sobre google Glass</h1>
+        <h3><i>Por Lucas Pimentel</h3></i>
+        <h3 class="direita">Atualizado em 09/02/2022</h3>
       </hgroup>
-    
+      </header>
+      
+
 
       <h2>Oque é</h2>
       <p> Google Glass é um acessório em forma de óculos que possibilita a interação dos usuários com diversos conteúdos
@@ -57,40 +57,42 @@
           <p>Uma nova maneira de ver o mundo.</p>
         </figcaption>
       </figure>
-      <h1>Data de lançamento</h1>
+      <h2>Data de lançamento</h2>
       <p>Não há uma data específica e oficial para o dispositivo ser lançado, ainda pode der que ele esteja disponível
         en demonstrações a partir de 2022 mais seu lançamentos para as lojas fica para, pelo menos, 2023.Especificações
         Técnicas Tabela Técnica do Googes Glass Mar/2022</p>
-      <h1>Especificações Técnicas</h1>
-      <table>
-        <caption>Tabela técnica do Google Glass Mar/2021</caption>
+      <h2>Especificações Técnicas</h2>
+      <table id="tabelaspec">
+        <caption>Tabela técnica do Google Glass <span>Mar/2021</span></caption>
 
         <tr>
-          <td>Tela Resolução equivalente a tela de 25"</td>
+          <td class="ce">Tela</td>
+          <td class="cd">Resolução equivalente a tela de 25"</td>
         </tr>
         <tr>
-          <td>Camera 5mp oara fotos / 720 para Vídeos</td>
+          <td rowspan="2" class="ce">Camera</td>
+          <td class="cd">5mp para fotos</td>
         </tr>
         <tr>
-          <td>Conectividade Wi-fi/Bluetooh
-        </tr>
-        </td>
-        <tr>
-          <td>Memória 12GB
-        </tr>
-        </td>
+          <td class="cd">720 para Vídeos</td></tr>
+        <tr><td rowspan="2" class="ce">Conectividade</td>
+        <td class="cd">Wi-fi</td></tr>
+        <tr><td class="cd">Bluetooh</td></tr>
+        <tr><td class="ce">Memória Interna</td>
+        <td class="cd">12GB</td></tr>
       </table>
 
-      <h1>como funciona</h1>
+      <h2>como funciona</h2>
       <p>De acordo com fontes próximas do Google, os óculos vão contar com uma pequena tela de LCD ou AMOLED na parte
         superior e em frente aos olhos do usuário. Com o uso de uma câmera e GPS, você pode se situar, assim como
         selecionar opções com o movimento da cabeça</p>
-      <h1>Oque você pode fazer com o Google Glasses</h1>
+      <h2>Oque você pode fazer com o Google Glasses</h2>
       <p>O vídeo de divulgação do Google mostra que você pode se transformar em uma espécie de “super-humano”, já que o
         aparelho pode indicar a quantos metros você está de seu destino, se o metrô está aberto ou fechado, mostrar o
         clima, agenda e até mesmo permitir que você marque encontros
         apenas com comandos de voz</p>
       [AQUI ENTRA UM VÍDEO]
+    </article>
     </section>
     <aside id="lateral">
       <h1>Outras Notícias</h1>
@@ -106,7 +108,7 @@
         metros de distância do espectador.
     </aside>
     <footer id="rodape">
-      <p> Copyright 2013 - by Gustavo Guanabara <br />
+      <p> Copyright 2013 - by Lucas Pimentel <br />
         <a href="http://facebook.com/cursosemvideo" target="_blank">Facebook </a> |
         <a href="http://twitter.com/cursosemvideo" target="_blank"> Twitter</a>
       </p>
@@ -114,5 +116,4 @@
     </aside>
   </div>
 </body>
-
 </html>
